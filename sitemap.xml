@@ -37,6 +37,11 @@
     </url>
     <url>
         <loc>
+            http://localhost:8000/wordpress-database/
+        </loc>
+    </url>
+    <url>
+        <loc>
             http://localhost:8000/category/uncategorized/
         </loc>
     </url>
