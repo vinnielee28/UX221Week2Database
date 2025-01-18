@@ -36,6 +36,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <style id='wp-block-paragraph-inline-css'>
 .is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
 </style>
+<style id='wp-block-quote-inline-css'>
+.wp-block-quote{box-sizing:border-box;overflow-wrap:break-word}.wp-block-quote.is-large:where(:not(.is-style-plain)),.wp-block-quote.is-style-large:where(:not(.is-style-plain)){margin-bottom:1em;padding:0 1em}.wp-block-quote.is-large:where(:not(.is-style-plain)) p,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) p{font-size:1.5em;font-style:italic;line-height:1.6}.wp-block-quote.is-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-large:where(:not(.is-style-plain)) footer,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) footer{font-size:1.125em;text-align:right}.wp-block-quote>cite{display:block}
+</style>
 <style id='wp-block-post-content-inline-css'>
 .wp-block-post-content{display:flow-root}
 </style>
@@ -88,6 +91,8 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 :root :where(.wp-block-post-date a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
 :root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-quote){border-color: currentColor;border-width: 0 0 0 2px;border-style: solid;font-size: var(--wp--preset--font-size--large);font-weight: 300;margin-right: 0;margin-left: 0;padding-top: var(--wp--preset--spacing--30);padding-right: var(--wp--preset--spacing--40);padding-bottom: var(--wp--preset--spacing--30);padding-left: var(--wp--preset--spacing--40);}:root :where(.wp-block-quote-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-quote-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-quote-is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:root :where(.wp-block-quote-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-quote-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-quote-is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:root :where(.wp-block-quote-is-layout-flex){gap: var(--wp--preset--spacing--30);}:root :where(.wp-block-quote-is-layout-grid){gap: var(--wp--preset--spacing--30);}:root :where(.wp-block-quote.has-text-align-right ){border-width: 0 2px 0 0;}:root :where(.wp-block-quote.has-text-align-center ){border-width: 0;border-inline: 0; padding-inline: 0;}
+:root :where(.wp-block-quote cite){font-size: var(--wp--preset--font-size--small);font-style: normal;font-weight: 300;}:root :where(.wp-block-quote cite sub){font-size: 0.65em}
 :root :where(.wp-block-query-pagination){font-size: var(--wp--preset--font-size--medium);font-weight: 500;}
 :root :where(.wp-block-site-tagline){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
@@ -98,7 +103,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
 </style>
 <style id='core-block-supports-inline-css'>
-.wp-container-core-navigation-is-layout-1{justify-content:flex-end;}.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:var(--wp--preset--spacing--10);justify-content:flex-end;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-navigation-is-layout-2{flex-direction:column;align-items:flex-start;}.wp-container-core-navigation-is-layout-3{flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-10{gap:var(--wp--preset--spacing--80);justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-11{justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-12{gap:var(--wp--preset--spacing--20);justify-content:space-between;}
+.wp-container-core-navigation-is-layout-1{justify-content:flex-end;}.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:var(--wp--preset--spacing--10);justify-content:flex-end;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-navigation-is-layout-2{flex-direction:column;align-items:flex-start;}.wp-container-core-navigation-is-layout-3{flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-13{gap:var(--wp--preset--spacing--80);justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-14{justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-15{gap:var(--wp--preset--spacing--20);justify-content:space-between;}
 </style>
 <style id='wp-block-template-skip-link-inline-css'>
 
@@ -205,10 +210,57 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 	
 <div class="wp-block-query alignfull is-layout-flow wp-block-query-is-layout-flow">
-	<ul class="alignfull wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-5 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<ul class="alignfull wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-16 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 		
 		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
-			<figure style="aspect-ratio:3/2;" class="wp-block-post-featured-image"><a href="/UX221Week2Database/welcome-to-week-2/" target="_self"  ><img width="1024" height="682" src="/UX221Week2Database/wp-content/uploads/2025/01/database.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Welcome to week 2" style="width:100%;height:100%;object-fit:cover;" decoding="async" fetchpriority="high" /></a></figure>
+			<figure style="aspect-ratio:3/2;" class="wp-block-post-featured-image"><a href="/UX221Week2Database/legado-sogrape/" target="_self"  ><img width="755" height="1024" src="/UX221Week2Database/wp-content/uploads/2025/01/Legado-2016_Packshot-755x1024-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Legado &#8211; Sogrape" style="width:100%;height:100%;object-fit:cover;" decoding="async" fetchpriority="high" /></a></figure>
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="/UX221Week2Database/legado-sogrape/" target="_self" >Legado &#8211; Sogrape</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<p>A wine of tribute. The handover of a torch, of knowledge, of passion. From Fernando Guedes to his children and grandchildren. A wine celebrating a vineyard of dreams and the Douro at its very best.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>“Legado is more than just a wine: it is a testimonial to the knowledge and skill handed down by my father, which I now leave for future generations of our family.”&nbsp;<em>Fernando Guedes (1930-2018)</em></p>
+</blockquote>
+
+
+
+<p></p>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2025-01-18T04:05:57+00:00"><a href="/UX221Week2Database/legado-sogrape/">January 18, 2025</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-13 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			<figure style="aspect-ratio:3/2;" class="wp-block-post-featured-image"><a href="/UX221Week2Database/gazela-sogrape/" target="_self"  ><img width="1280" height="1280" src="/UX221Week2Database/wp-content/uploads/2025/01/1642-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Gazela &#8211; Sogrape" style="width:100%;height:100%;object-fit:cover;" decoding="async" /></a></figure>
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="/UX221Week2Database/gazela-sogrape/" target="_self" >Gazela &#8211; Sogrape</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<p>The world is full of appearances and filters that embellish reality. But what could be better than a good dose of authenticity? It&#8217;s the same in the world of wine. There are many rituals. But the endless scrolls that detract from reality are enough for appearances.</p>
+
+
+
+<p>Gazela is authentic, inclusive, uncomplicated. Gazela is fresh. Period. No Filters.</p>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2025-01-18T04:03:41+00:00"><a href="/UX221Week2Database/gazela-sogrape/">January 18, 2025</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			<figure style="aspect-ratio:3/2;" class="wp-block-post-featured-image"><a href="/UX221Week2Database/aura-sogrape/" target="_self"  ><img width="1144" height="1716" src="/UX221Week2Database/wp-content/uploads/2025/01/Aura.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Aura &#8211; Sogrape" style="width:100%;height:100%;object-fit:cover;" decoding="async" srcset="/UX221Week2Database/wp-content/uploads/2025/01/Aura.png 1144w, /UX221Week2Database/wp-content/uploads/2025/01/Aura-200x300.png 200w, /UX221Week2Database/wp-content/uploads/2025/01/Aura-683x1024.png 683w, /UX221Week2Database/wp-content/uploads/2025/01/Aura-768x1152.png 768w, /UX221Week2Database/wp-content/uploads/2025/01/Aura-1024x1536.png 1024w" sizes="(max-width: 1144px) 100vw, 1144px" /></a></figure>
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="/UX221Week2Database/aura-sogrape/" target="_self" >Aura &#8211; Sogrape</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<p>Aura is the sun that warms the grapes and the night that protects them until they are harvested. It is also an ode to the nocturnal harvest, a history of Rueda which delivers the region’s flavour in each glass.</p>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2025-01-18T04:01:18+00:00"><a href="/UX221Week2Database/aura-sogrape/">January 18, 2025</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-5 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			<figure style="aspect-ratio:3/2;" class="wp-block-post-featured-image"><a href="/UX221Week2Database/welcome-to-week-2/" target="_self"  ><img width="1024" height="682" src="/UX221Week2Database/wp-content/uploads/2025/01/database.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Welcome to week 2" style="width:100%;height:100%;object-fit:cover;" decoding="async" loading="lazy" /></a></figure>
 			<h2 class="wp-block-post-title has-x-large-font-size"><a href="/UX221Week2Database/welcome-to-week-2/" target="_self" >Welcome to week 2</a></h2>
 			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
 <p>In week 2 we will speak of databases.</p>
@@ -251,7 +303,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 		
 
 		
-		<div class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-11 wp-block-group-is-layout-flex">
+		<div class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-14 wp-block-group-is-layout-flex">
 			
 			<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
 				
@@ -272,7 +324,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 			
 
 			
-			<div class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-10 wp-block-group-is-layout-flex">
+			<div class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-13 wp-block-group-is-layout-flex">
 				<nav class="is-vertical wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-2 wp-block-navigation-is-layout-flex" aria-label=""><ul class="wp-block-navigation__container  is-vertical wp-block-navigation"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Blog</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">About</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">FAQs</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Authors</span></a></li></ul></nav>
 
 				<nav class="is-vertical wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-3 wp-block-navigation-is-layout-flex" aria-label=""><ul class="wp-block-navigation__container  is-vertical wp-block-navigation"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Events</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Shop</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Patterns</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Themes</span></a></li></ul></nav>
@@ -286,7 +338,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 		
 
 		
-		<div class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-12 wp-block-group-is-layout-flex">
+		<div class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-15 wp-block-group-is-layout-flex">
 			
 			<p class="has-small-font-size">Twenty Twenty-Five</p>
 			
